@@ -1,0 +1,49 @@
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.box{
+  position: absolute;
+  height: 45%;
+  width: 50%;
+  top: 25%;
+  left:25%;
+  border-color: #C0C0C0;
+  background-color: #7092BE;
+  border:solid 20px #507F80;
+  border-radius: 2px;
+
+}
+body{
+  background-color: #151B24;
+}
+span{
+  background-color: #507F80;
+  position: absolute;
+  top: 10%;
+  left:27%;
+  height: 10%;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+}
+form{
+
+  position: absolute;
+  top: 30%;
+  left:27%;
+  height: 10%;
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+}
+#sub{
+    font-size: 20px;
+      background-color: #507F80;
+}
+#S1{
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  color: #7F82BB;
+  background-color: #151B24;
+  position: absolute;
+  top: 15%;
+  left: 40%;
+
+}

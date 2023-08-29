@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+    function validateForm() {
+// Get the form element.
+var form = document.getElementById("myForm");
+
+// Get the input elements.
+var name = document.getElementById("NAME");
+var email = document.getElementById("email");
+var password = document.getElementById("passwords");
+
+
+// Check if the name field is empty.
+if (name.value == "") {
+  alert("Please enter your name.");
+  name.focus();
+  return false;
+}
+
+// Check if the email field is empty.
+if (email.value == "") {
+  alert("Please enter your email address.");
+  email.focus();
+  return false;
+}
+
+// Check if the email address is valid.
+var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+if (!re.test(email.value)) {
+  alert("Please enter a valid email address.");
+  email.focus();
+  return false;
+}
+
+// Check if the password field is empty.
+if (password.value == "") {
+  alert("Please enter your password.");
+  password.focus();
+  return false;
+}
+
+// Check if the password is at least 8 characters long.
+if (password.value.length < 8) {
+  alert("Your password must be at least 8 characters long.");
+  password.focus();
+  return false;
+}
+
+// Check if the category field is selected.
+
+
+// The form is valid, so return true.
+return true;
+}
+    </script>
+  </head>
+  <body><span id="S1">VENDOR SIGN UP</span>
+<div class="box">
+  <span>Event Management System</span>
+  <div class="f"><br><br>
+    <form class="" action="VLOGIM.HTML" method="post" onsubmit="return validateForm()">
+
+
+    <label for="NAME">&nbsp;NAME&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp:</label>
+    <input type="text" id="NAME"  name="NAME"><br>
+    <label for="MAIL">&nbsp;E-MAIL&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp:</label>
+  <input type="email" id="email" name="email"><br>
+  <label for="pass">&nbsp;PASSWORD:</label>
+<input type="password" id="passwords"  name="passwords"><br>
+
+  &nbsp;<input type="submit" value="Sign Up"id="sub">
+</form>
+  </div>
+
+
+</div>
+  </body>
+</html>
